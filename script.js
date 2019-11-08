@@ -5,7 +5,8 @@ var done = false
 function setup() {
     createCanvas(720,720);
     textSize(18);
-    text("To create your personal Mind-Map, you will need to rate 6 categories on a scale from 0 to 5, based on the impact they have on your daily life." ,15 ,25, 650,100);
+    text("To create your personal Mind-Map, you will need to rate 7 categories on a scale from 0 to 5, based on the impact they have on your daily life." ,15 ,25, 650,100);
+    text("Click 's' once you're done to save the image.",15,50)
     button = createButton("Start questionnaire")
     button.position(25,100)
     console.log(done)
@@ -86,10 +87,6 @@ function draw(){
         textAlign(RIGHT)
         textSize(24)
         text(yourName, 700, 700)
-        // noFill()
-        // stroke("black")
-        // strokeWeight(5)
-        // rect(5,5,710,490)
     }
     
 }
